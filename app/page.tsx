@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
 import { Button } from "@heroui/button";
 
 import { title, subtitle } from "@/components/primitives";
@@ -19,12 +18,12 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Discount&nbsp;</span>
-        <span className={title({ color: "violet" })}>Time Machine&nbsp;</span>
+        <span className={title()}>Ranking&nbsp;</span>
+        <span className={title({ color: "violet" })}>Disney Movies&nbsp;</span>
         <br />
-        <span className={title()}>Wholesale</span>
+        <span className={title()}>By Popularity</span>
         <div className={subtitle({ class: "mt-4" })}>
-          A project template for YOU to make your own!
+          Which one is your favorite?
         </div>
       </div>
 
@@ -38,10 +37,21 @@ export default function Home() {
         </div>
       </div>
 
+      <img
+        alt="zootopia"
+        src="https://editorial.rottentomatoes.com/wp-content/uploads/2026/01/ZOOTOPIAheader.jpg"
+        width="50%"
+      />
       <div className="mt-8">
         <Snippet hideCopyButton hideSymbol variant="bordered">
           <span>
-            Get started by editing <Code color="primary">app/page.tsx</Code>
+            <ol>
+              <li>1. Pinocchio</li>
+              <li>2. Zootopia</li>
+              <li>3. 101 Dalmations</li>
+              <li>4. Snow White and the Seven Dwarf</li>
+              <li>5. Aladdin</li>
+            </ol>
           </span>
         </Snippet>
       </div>
